@@ -5,8 +5,11 @@ class Auth extends CI_Controller
 {
     public function index()
     {
-        $data['title'] = 'Home';
-        $this->load->view('templates/header');
+        $data['title'] = 'YBM PLN KAL-BAR';
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('auth/index', $data);
         $this->load->view('templates/footer');
     }
 }

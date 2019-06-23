@@ -1,3 +1,3 @@
 <div class="container">
-    <h1>Kamusdasdasdsa</h1>
+    <h2><?= $title; ?></h2>
 </div>

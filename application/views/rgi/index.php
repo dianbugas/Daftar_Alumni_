@@ -33,7 +33,7 @@
     <div class="row mt-4">
         <div class="col md-6">
             <div class="table-responsive-sm">
-                <?php if (empty($petik)) : ?>
+                <?php if (empty($rgi)) : ?>
                     <div class="alert alert-danger" role="alert">
                         Data Surat Keluar tidak ditemukan
                     </div>
@@ -52,13 +52,13 @@
                     <tbody>
                         <?php
                         $no = 1;
-                        foreach ($petik as $p) : ?>
+                        foreach ($rgi as $r) : ?>
                         <tr>
                             <th class="text-center"><?= $no++; ?></th>
-                            <th><?= $p['nama']; ?></th>
-                            <th><?= $p['alamat']; ?></th>
-                            <th><?= $p['perusahaan']; ?></th>
-                            <th><?= $p['jabatan']; ?></th>
+                            <th><?= $r['nama']; ?></th>
+                            <th><?= $r['alamat']; ?></th>
+                            <th><?= $r['perusahaan']; ?></th>
+                            <th><?= $r['jabatan']; ?></th>
                             <th>
                                 <a href="#" class="fa fa-download fa-lg" style="color:black"></a>
                                 <a href="#" class="fa fa-search-plus fa-lg"></a>

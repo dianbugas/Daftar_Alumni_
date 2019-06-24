@@ -1,10 +1,10 @@
     <!-- Footer -->
-    <footer>
-       <!-- // <div class="container my-auto"> -->
-          <!-- <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Pondok Pesantren Matla'ul Anwar <?= date('Y'); ?></span>
-          </div> -->
-        <!-- //</div> -->
+      <footer class="sticky-footer bg-white">
+        <!-- <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2019</span>
+          </div>
+        </div> -->
       </footer>
       <!-- End of Footer -->
 

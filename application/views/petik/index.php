@@ -1,5 +1,5 @@
 <div class="container">
-    <h2 class="h3 mb-2 text-gray-800"><?= $title; ?></h2>
+    <h2 class="h3 mb-2 text-gray-800"><?= $judul; ?></h2>
     <div class="container">
     <div class="flash-data" data-flashdata="<?= $this->session->flashdata('flash'); ?>"></div>
     <?php if ($this->session->flashdata('flash')) : ?>
@@ -12,7 +12,7 @@
                 </button>
             </div>
         </div>
-    </div> -->
+    </div> -->  
     <?php endif; ?> 
     <div class="row mt-3">
         <div class="col-md-6">

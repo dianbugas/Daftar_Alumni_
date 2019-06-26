@@ -12,7 +12,7 @@ class Petik extends CI_Controller
 
     public function index()
     {
-        $data['judul'] = 'Daftar Alumni Petik';
+        $data['title'] = 'Daftar Alumni Petik';
         $data['petik'] = $this->Petik_model->getAllPetik();
         // if ($this->input->post('keyword')) {
         //     $data['petik'] = $this->Petik_model->cariDataPetik();
@@ -26,7 +26,7 @@ class Petik extends CI_Controller
 
     public function tambah()
     {
-        $data['judul'] = 'Tambah Data Alumni Petik';
+        $data['title'] = 'Tambah Data Alumni Petik';
 
         $this->form_validation->set_rules('nama', 'Nama', 'required');
         $this->form_validation->set_rules('ttl', 'Tempat dan Tanggal Lahir', 'required');
@@ -40,7 +40,7 @@ class Petik extends CI_Controller
             $this->load->view('templates/header', $data);
             $this->load->view('templates/sidebar');
             $this->load->view('templates/topbar');
-            $this->load->view('petik/index', $data);
+            $this->load->view('petik/tambah', $data);
             $this->load->view('templates/footer');
         } else {
             $this->Petik_model->tambahDataPetik();

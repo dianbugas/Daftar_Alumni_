@@ -26,7 +26,7 @@ class Rgi extends CI_Controller
 
     public function tambah()
     {
-        $data['judul'] = 'Tambah Data Alumni RGI';
+        $data['title'] = 'Tambah Data Alumni RGI';
 
         $this->form_validation->set_rules('nama', 'Nama', 'required');
         $this->form_validation->set_rules('ttl', 'Tempat dan Tanggal Lahir', 'required');
@@ -40,7 +40,7 @@ class Rgi extends CI_Controller
             $this->load->view('templates/header', $data);
             $this->load->view('templates/sidebar');
             $this->load->view('templates/topbar');
-            $this->load->view('rgi/index', $data);
+            $this->load->view('rgi/tambah', $data);
             $this->load->view('templates/footer');
         } else {
             $this->Rgi_model->tambahDataRgi();

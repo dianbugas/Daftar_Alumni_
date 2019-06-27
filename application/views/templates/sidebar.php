@@ -1,7 +1,4 @@
-<!-- Main Content -->
-      <div id="content">
-
-        <!-- Sidebar -->
+ <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
           <!-- Sidebar - Brand -->
@@ -36,10 +33,29 @@
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
               <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Components:</h6>
-                <a class="collapse-item" href="<?= base_url(); ?>petik">Petik</a>
-                <a class="collapse-item" href="<?= base_url(); ?>rgi">Rgi</a>
+                <a class="collapse-item" >Petik</a>
+                <a class="collapse-item" >Rgi</a>
               </div>
             </div>
+          </li>
+
+          <!-- Nav Item - Charts -->
+          <li class="nav-item">
+            <a class="nav-link" href="<?= base_url(); ?>petik">
+              <i class="fas fa-fw fa-users"></i>
+              <span>Petik</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="<?= base_url(); ?>rgi">
+              <i class="fas fa-fw fa-users"></i>
+              <span>Rgi</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="<?= base_url(); ?>programmer">
+              <i class="fas fa-fw fa-users"></i>
+              <span>Programmer</span></a>
           </li>
 
           <!-- Nav Item - Utilities Collapse Menu -->
@@ -111,5 +127,3 @@
 
         </ul>
         <!-- End of Sidebar -->
-      </div>
-      <!-- end of Content -->

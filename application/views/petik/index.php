@@ -38,37 +38,41 @@
                             Data Surat Keluar tidak ditemukan
                         </div>
                     <?php endif; ?>
-                    <table class="table table-striped table-bordered">
-                        <thead class="thead">
-                            <tr>
-                                <th scope="col md-3" class="text-center">no</th>
-                                <th scope="col" class="text-center">Nama</th>
-                                <th scope="col" class="text-center">alamat</th>
-                                <th scope="col" class="text-center">perusahaan</th>
-                                <th scope="col" class="text-center">jabatan</th>
-                                <th scope="col" class="text-center">aksi</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php
-                            $no = 1;
-                            foreach ($petik as $p) : ?>
-                            <tr>
-                                <th class="text-center"><?= $no++; ?></th>
-                                <th><?= $p['nama']; ?></th>
-                                <th><?= $p['alamat']; ?></th>
-                                <th><?= $p['perusahaan']; ?></th>
-                                <th><?= $p['jabatan']; ?></th>
-                                <th>
-                                    <a href="#" class="fa fa-download fa-lg" style="color:black"></a>
-                                    <a href="#" class="fa fa-search-plus fa-lg"></a>
-                                    <a href="#" class="fa fa-pencil-square-o fa-lg" style="color:Green"></a>
-                                    <a href="#" class="fa fa-trash fa-lg tombol-hapus" style="color:red"></a>
-                                </th>  
-                            </tr>
-                            <?php endforeach; ?>
-                        </tbody>
-                    </table>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped" width="100%" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>no</th>
+                                        <th>Nama</th>
+                                        <th>alamat</th>
+                                        <th>perusahaan</th>
+                                        <th>jabatan</th>
+                                        <th>aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    $no = 1;
+                                    foreach ($petik as $p) : ?>
+                                    <tr>
+                                        <th><?= $no++; ?></th>
+                                        <th><?= $p['nama']; ?></th>
+                                        <th><?= $p['alamat']; ?></th>
+                                        <th><?= $p['perusahaan']; ?></th>
+                                        <th><?= $p['jabatan']; ?></th>
+                                        <th>
+                                            <a href="#" class="fa fa-download fa-lg" style="color:black"></a>
+                                            <a href="#" class="fa fa-search-plus fa-lg"></a>
+                                            <a href="#" class="fa fa-pencil-square-o fa-lg" style="color:Green"></a>
+                                            <a href="#" class="fa fa-trash fa-lg tombol-hapus" style="color:red"></a>
+                                        </th>  
+                                    </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

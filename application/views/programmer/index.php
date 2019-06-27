@@ -16,7 +16,7 @@
     <?php endif; ?> 
     <div class="row mt-3">
         <div class="col-md-6">
-            <a href="#" class="btn btn-primary">Tambah Data</a>
+            <a href="<?= base_url() ?>programmer/tambah" class="btn btn-primary">Tambah Data</a>
         </div>
         <div class="col-md-6">
         <form action="" method="post">

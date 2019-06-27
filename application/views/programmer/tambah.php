@@ -3,7 +3,7 @@
         <div class="col-md-7">
             <div class="card">
                 <div class="card-header">
-                    <h4>Form Tambah Data Alumni Petik</h4>
+                    <h4>Form Tambah Data Alumni Sekolah Programmer</h4>
                 </div>
                 <div class="card-body">
                     <form action="#" method='post'>

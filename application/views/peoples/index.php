@@ -16,6 +16,7 @@
 
         <div class="row">
             <div class="col-md-10">
+                <h5>Result : <?= $total_rows; ?></h5>
                 <table class="table">
                     <thead>
                         <tr>
@@ -24,9 +25,19 @@
                             <th>Email</th>
                             <th>Action</th>
                         </tr>
-                        <?php foreach ($peoples as $peoples) :
-                        ?>
+                        </thead>
                         <tbody>
+                            <?php if (empty($peoples)) : ?>
+                                <tr>
+                                    <td colspan="4">
+                                        <div class="alert alert-danger" role="alert">
+                                            data not found!
+                                        </div>
+                                    </td>
+                                </tr>
+                            <?php endif; ?>
+                            <?php foreach ($peoples as $peoples) :
+                            ?>
                             <tr>
                                 <td><?= ++$start; ?></td>
                                 <td><?= $peoples['name']; ?></td>
@@ -39,7 +50,7 @@
                             </tr>
                             <?php endforeach; ?>
                         </tbody>
-                    </thead>
+                    
                 </table>
                 <?= $this->pagination->create_links(); ?>
             </div>

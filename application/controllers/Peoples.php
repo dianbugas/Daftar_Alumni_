@@ -73,3 +73,4 @@ class Peoples extends CI_Controller
     // }
 
 }
+//sekat dulu
